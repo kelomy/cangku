@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WMSDataSet1" targetNamespace="http://tempuri.org/WMSDataSet1.xsd" xmlns:mstns="http://tempuri.org/WMSDataSet1.xsd" xmlns="http://tempuri.org/WMSDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="WMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.cangku.Properties.Settings.GlobalReference.Default.WMSConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WarehousesTableAdapter" GeneratorDataComponentClassName="WarehousesTableAdapter" Name="Warehouses" UserDataComponentName="WarehousesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="WMSConnectionString (Settings)" DbObjectName="WMS.dbo.Warehouses" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT WName FROM dbo.Warehouses</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="WName" DataSetColumn="WName" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WMSDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="WMSDataSet1" msprop:Generator_DataSetName="WMSDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Warehouses" msprop:Generator_UserTableName="Warehouses" msprop:Generator_RowDeletedName="WarehousesRowDeleted" msprop:Generator_TableClassName="WarehousesDataTable" msprop:Generator_RowChangedName="WarehousesRowChanged" msprop:Generator_RowClassName="WarehousesRow" msprop:Generator_RowChangingName="WarehousesRowChanging" msprop:Generator_RowEvArgName="WarehousesRowChangeEvent" msprop:Generator_RowEvHandlerName="WarehousesRowChangeEventHandler" msprop:Generator_TablePropName="Warehouses" msprop:Generator_TableVarName="tableWarehouses" msprop:Generator_RowDeletingName="WarehousesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WName" msprop:Generator_UserColumnName="WName" msprop:Generator_ColumnPropNameInRow="WName" msprop:Generator_ColumnVarNameInTable="columnWName" msprop:Generator_ColumnPropNameInTable="WNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
